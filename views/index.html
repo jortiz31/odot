@@ -1,0 +1,31 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation Starter Template</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  </head>
+  <body>
+      <div class="row" ng-app ng-init="qty=1;cost=2">
+        <b>Invoice</b>
+        <div>
+            Quantity: <input type="number" min="0" ng-model="qty">
+        </div>
+        <div>
+            Invoice: <input type="number" min="0" ng-model="cost">
+        </div>
+        <div>
+            <b>Total</b> {{qty * cost | currency}}  
+        </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="   crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+      </div>
+  </body>
+</html>
